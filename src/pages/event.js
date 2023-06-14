@@ -1,17 +1,12 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.scss";
 
-const inter = Inter({ subsets: ["latin"] });
+import styles from "@/styles/Home.module.scss";
 
 //components
 import Layout from "@/components/layout";
-import Header from "@/components/header";
 
 // utils
-import { getAllNewPosts } from "@/utils/funcs";
-import EventCard from "@/components/eventcard";
+
 import EventCardList from "@/components/eventCardList";
 
 export default function Event({ data }) {
