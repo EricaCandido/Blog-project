@@ -1,9 +1,8 @@
 .MainLayout {
-  background-color: $background-light;
+  background-color: rgb(47, 47, 47);
+  color: white;
+  font-family: $dosis;
   section {
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
   }
 }

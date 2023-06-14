@@ -1,0 +1,56 @@
+.eventCard {
+  padding: 20px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  width: fit-content;
+  max-width: 340px;
+
+  .eventImage {
+    width: 100%;
+    border-radius: $def-border-rad;
+  }
+
+  .ticketBuy {
+    padding: 10px;
+    border-radius: $def-border-rad;
+    background-color: rgba(0, 0, 0, 0.708);
+    transition: background-color 0.35s;
+
+    &:hover {
+      background-color: $active-color;
+      font-weight: bold;
+    }
+  }
+}
+
+// .eventCard {
+//   padding: 20px;
+//   border: 1px dashed $secondary-color-dark;
+//   display: flex;
+//   gap: 20px;
+//   position: relative;
+//   .eventImage {
+//     width: 30%;
+//   }
+//   .textWrapper {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: start;
+//     gap: 30px;
+//   }
+
+//   .ticketBuy {
+//     padding: 15px;
+//     position: absolute;
+//     bottom: 20px;
+//     background-color: $impression-color;
+
+//     &:hover {
+//       background-color: $active-color;
+//     }
+//   }
+// }

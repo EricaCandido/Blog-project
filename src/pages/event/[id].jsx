@@ -24,6 +24,8 @@ export const getStaticPaths = () => {
 
 export const getStaticProps = ({ params }) => {
   const newPostData = getNewPostData(params.id);
+
+  console.log(newPostData);
   return {
     props: {
       newPostData,

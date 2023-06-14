@@ -11,10 +11,20 @@ export default function Post(props) {
   return (
     <Layout>
       <div className={styles.slug}>
-        <p>{date}</p>
-        <Image src={image} width={400} height={300} alt={title} />{" "}
-        <h1>{title}</h1>
-        <div>{body}</div>
+        <Image
+          className={styles.slugImage}
+          src={image}
+          width={300}
+          height={450}
+          alt={title}
+        />
+        <div className={styles.textWrapper}>
+          <h1>{title}</h1>
+          <div>{body}</div>
+          <p>
+            <b>{date}</b>
+          </p>
+        </div>
       </div>
     </Layout>
   );

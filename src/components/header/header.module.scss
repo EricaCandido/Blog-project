@@ -1,24 +1,106 @@
 .header {
-  background-color: $primary-color-dark;
+  // background-color: $primary-color-dark;
   height: 100px;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid white;
+  border-radius: $def-border-rad;
+  transition: transform 1s ease;
+  @include mobile {
+    height: 80px;
+  }
 
-  ul {
+  .hambMenu {
+    display: none;
+    margin-left: 20px;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: transform 1s;
+    @include mobile {
+      display: block;
+    }
+  }
+
+  .hambMenuContent {
+    transform: translateY(-120%);
+    transition: transform 1s;
+    list-style-type: none;
+    font-size: 1.5rem;
+    position: absolute;
+
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    padding-left: 30px;
+
+    height: 200px;
+    width: 150px;
+
+    left: 20px;
+    z-index: 2;
+    background-color: white;
+    border-radius: $def-border-rad;
+    color: black;
+  }
+  .show {
+    transition: transform 1s;
+    list-style-type: none;
+    font-size: 1.5rem;
+    position: absolute;
+    transform: translateY(80px);
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    padding-left: 30px;
+
+    height: 200px;
+    width: 150px;
+
+    left: 20px;
+    z-index: 2;
+    background-color: white;
+    border-radius: $def-border-rad;
+    color: black;
+  }
+  .menu {
     list-style-type: none;
     display: flex;
-    gap: 20px;
+    gap: 25px;
     padding-left: 50px;
-
+    @include mobile {
+      display: none;
+    }
     li {
-      color: $impression-color;
-      font-size: 1.2rem;
-      transition: transform 0.35s;
+      font-size: 1.4rem;
+      transition: color 0.35s;
+      font-weight: bold;
 
       &:hover {
-        transform: scale(1.3);
         color: $active-color;
       }
+      @include tablet {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .logo {
+    width: 100%;
+    margin-right: 50px;
+    text-align: right;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: color 0.35s;
+
+    &:hover {
+      color: $active-color;
+    }
+    @include mobile {
+      font-size: 0.9rem;
     }
   }
 }

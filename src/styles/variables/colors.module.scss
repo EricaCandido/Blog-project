@@ -1,7 +1,53 @@
-$primary-color-light: #38b000;
-$primary-color-dark: #004b23;
-$secondary-color-dark: #006400;
-$impression-color: #70e000;
-$active-color: #ccff33;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
 
-$background-light: #38b00070;
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap");
+
+//palette
+$primary: #262626;
+$secondary: #cdcdcd;
+$active: #ffd700;
+
+//fonts
+$josefineSlab: "Josefin Slab", serif;
+$josefineSans: "Josefin Sans", sans-serif;
+$cormorant: "Cormorant", serif;
+$cursive: "Cedarville Cursive", cursive;
+
+$dosis: "Dosis", sans-serif;
+
+$primary-color-dark: #a75d5d;
+$secondary-color-dark: #d3756b;
+$impression-color: #ffc3a1;
+$active-color: #606c5d;
+
+$background-light: #ffe0ee;
+
+//border
+
+$def-border-rad: 18px;
+
+// VARIABLES
+
+$mobile: 420px;
+$tablet: 820px;
+$desktop: 1024px;
+
+//---------------------------------------------
+//MEDIA QUERY
+
+// Mobile
+//--------------------------------------------------------------------//
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}

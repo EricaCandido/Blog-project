@@ -1,0 +1,35 @@
+.title {
+  margin-left: 50px;
+}
+.Wrapper {
+  padding: 30px;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @include tablet {
+    gap: 10px;
+  }
+  // @include mobile {
+  //   flex-direction: column;
+  //   align-items: center;
+  //   border: 2px solid red;
+  // }
+  .profileImage {
+    border-radius: $def-border-rad;
+
+    @include tablet {
+      width: 230px;
+      height: 310px;
+    }
+  }
+
+  .textWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+    gap: 10px;
+  }
+}
